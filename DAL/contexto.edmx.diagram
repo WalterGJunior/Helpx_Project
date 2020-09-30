@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3d2ca95ca3914acd9fa7c37537d12961" Name="Diagram1">
+        <EntityTypeShape EntityType="Banco.tb_cidades" Width="1.5" PointX="3.125" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Banco.tb_clientes" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Banco.tb_estados" Width="1.5" PointX="0.5" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Banco.tb_solicitacoes" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Banco.tb_status" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Banco.tb_tipos" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Banco.tb_usuarios" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="Banco.FK_cidades_estados" ManuallyRouted="false" />
+        <AssociationConnector Association="Banco.FK_cliente_cidade" ManuallyRouted="false" />
+        <AssociationConnector Association="Banco.fk_solicitacoes_clientes" ManuallyRouted="false" />
+        <AssociationConnector Association="Banco.fk_solicitacoes_status" ManuallyRouted="false" />
+        <AssociationConnector Association="Banco.fk_solicitacoes_usuario_analista" ManuallyRouted="false" />
+        <AssociationConnector Association="Banco.fk_solicitacoes_usuario_cadastro" ManuallyRouted="false" />
+        <AssociationConnector Association="Banco.FK_solicitacoes_tipos" />
+        <EntityTypeShape EntityType="Banco.tb_LogSolicitacoes" Width="1.5" PointX="7.75" PointY="4.125" />
+        <AssociationConnector Association="Banco.fk_LogSolicitacoes_solicitacoes" />
+        <AssociationConnector Association="Banco.fk_LogSolicitacoes_usuarios" />
+        <AssociationConnector Association="Banco.FK_LogSolicitacoes_status" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

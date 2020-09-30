@@ -1,0 +1,234 @@
+﻿@using DAL;
+@using System.Data.Entity;
+@model DAL.ClientesVO
+
+@{
+    ViewBag.Title = "Clientes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+#cidade option{
+       display: none;
+}
+
+</style>
+
+<script>
+    $(document).ready(function () {      
+        $('select[name="estado"]').on('change', function () {
+            $('#cidade').prop('selectedIndex', 0);
+            var estado = this.value;
+            $('select[name="cidade"] option').each(function () {
+                var $this = $(this);
+                if ($this.data('estado') == estado) $this.show();
+                else $this.hide();
+            });
+        });       
+    });
+
+    function salvarCliente() {
+
+        if ($('#cpf_cnpj').val().trim() == "") {
+            return alert("PREENCHER O CPF | CNPJ");
+
+        } else if ($('#rg').val().trim() == '') {
+            return alert('PREENCHER O RG');
+
+        } else if ($('#nome').val().trim() == '') {
+            return alert('PREENCHER O NOME');
+
+        } else if ($('#nome_fantasia').val().trim() == '') {
+            return alert('PREENCHER O NOME FANTASIA');
+        }
+        else if ($('#razao_social').val().trim() == '') {
+            return alert('PREENCHER A RAZÃO SOCIAL');
+        }
+        else if ($('#telefone').val().trim() == '') {
+            return alert('PREENCHER O TELEFONE');
+        }
+        else if ($('#celular').val().trim() == '') {
+            return alert('PREENCHER O CELULAR');
+        }
+        else if ($('#rua').val().trim() == '') {
+            return alert('PREENCHER A RUA');
+        }
+        else if ($('#numero').val().trim() == '') {
+            return alert('PREENCHER O NUMERO');
+        }
+        else if ($('#complemente').val().trim() == '') {
+            return alert('PREENCHER O COMPLEMENTO');
+        }
+        else if ($('#bairro').val().trim() == '') {
+            return alert('PREENCHER O BAIRRO');
+        }
+        else if ($('#cep').val().trim() == '') {
+            return alert('PREENCHER O CEP');
+        }
+
+        var formData = $("#form-cliente");
+        $.ajax({
+            url: '/Clientes/GravarClientes',
+            type: 'POST',
+            data: formData.serialize(),
+            error: function () {
+                alert("Error");
+            },
+            success: function (data) {
+                if (!data.success)
+                    return alert("Erro ao gravar cliente.");
+                window.location = "/Clientes/Index";
+            },
+            contenType: false, processData: false,
+
+        })
+    };
+
+    function carregarCidade() {
+        var estado = $("#estado").val();
+
+        $('select[name="cidade"] option').each(function () {
+            var $this = $(this);
+            if ($this.data('estado') == estado) $this.show();
+            else $this.hide();
+        });
+    }
+</script>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">@(Model.ClienteId > 0 ? "Editar " : "Novo")Cliente</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Cadastro de Clientes
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form id="form-cliente" role="form" action="javascript:salvarCliente()" method="post">
+                            <div class="form-group">
+                                <input type="hidden" name="id" value="@Model.ClienteId">
+                            </div>
+                            <div class="form-group">
+                                <label>CPF / CNPJ</label>
+                                <input class="form-control" name="cpf_cnpj" id="cpf_cnpj" placeholder="Digite o CPF ou CNPJ" value="@Model.CPF_CNPJ">
+                            </div>
+                            <div class="form-group">
+                                <label>RG</label>
+                                <input class="form-control" name="rg" id="rg" placeholder="Digite o RG" value="@Model.RG">
+                            </div>
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input class="form-control" name="nome" id="nome" placeholder="Digite o Nome" value="@Model.NomeCliente">
+                            </div>
+                            <div class="form-group">
+                                <label>Razão Social</label>
+                                <input class="form-control" name="razao_social" id="razao_social" placeholder="Digite a Razão Social" value="@Model.RazaoSocial">
+                            </div>
+                            <div class="form-group">
+                                <label>Nome Fantasia</label>
+                                <input class="form-control" name="nome_fantasia" id="nome_fantasia" placeholder="Digite o Nome Fantasia" value="@Model.NomeFantasia">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Telefone</label>
+                                <input class="form-control phone-ddd-mask" maxlength="15" name="telefone" id="telefone" placeholder="(00) 0000-0000" value="@Model.NumeroTelefone">
+                            </div>
+                            <div class="form-group">
+                                <label>Celular</label>
+                                <input class="form-control cel-sp-mask" maxlength="15" name="celular" id="celular" placeholder="(00) 00000-0000" value="@Model.NumeroCelular">
+                            </div>
+                            <div class="form-group">
+                                <label>Rua</label>
+                                <input class="form-control" name="rua" id="rua" placeholder="Digite o nome da Rua" value="@Model.NomeRua">
+                            </div>
+                            <div class="form-group">
+                                <label>Número</label>
+                                <input class="form-control" name="numero" id="numero" placeholder="Número da casa" value="@Model.NumeroCasa">
+                            </div>
+                            <div class="form-group">
+                                <label>Complemento</label>
+                                <input class="form-control" name="complemente" id="complemente"  placeholder="Digite o Complemento" value="@Model.ComplementoCasa">
+                            </div>
+                            <div class="form-group">
+                                <label>Bairro</label>
+                                <input class="form-control" name="bairro" id="bairro" placeholder="Digite o nome do Bairro" value="@Model.NomeBairro">
+                            </div>
+                            <div class="form-group">
+                                <label>CEP:</label>
+                                <input class="form-control" name="cep" id="cep" placeholder="Digite o CEP" value="@Model.NumeroCep">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Estado</label>
+                                <select name="estado" id="estado" class="form-control" tab-index="18">
+                                    @{
+                                        if (ViewBag.ListaEstados != null)
+                                        {                                            
+                                            foreach (var item in ViewBag.ListaEstados)
+                                            {
+                                                if (@item.id == @Model.EstadoId)
+                                                {
+                                                    <option value="@item.id" selected>@item.nome</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@item.id">@item.nome</option>
+                                                }
+                                            }
+                                        }
+                                        else
+                                        {
+                                        <option value="" selected="selected">Nenhum estado cadastrada</option> 
+                                        }  
+                   
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Cidade</label>
+                                <select name="cidade" id="cidade" class="form-control" onload="carregarCidade()">
+                                    @{                                        
+                                        if (ViewBag.ListaCidades != null)
+                                        {
+                                            
+                                            foreach (var item in ViewBag.ListaCidades)
+                                            {
+                                                if (@item.id == @Model.CidadeId)
+                                                {
+                                                    <option data-estado="@item.estado_id" value="@item.id" selected>@item.nome</option>                                                        
+                                                }
+                                                else
+                                                {
+                                                    <option data-estado="@item.estado_id" value="@item.id">@item.nome</option>  
+                                                }
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                        <option value="" selected="selected">Nenhum estado cadastrada</option> 
+                                        }  
+                   
+                                    }
+                                </select>
+                            </div>
+                            <p>
+                                <button name="btn_salvar" id="btn_salvar" class="btn btn-primary">Salvar</button>
+                                <a class="btn btn-default" href="/Clientes/Index"  role="button">Cancelar</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

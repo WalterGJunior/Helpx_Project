@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    $(document).ready(function () {
+        $('#dataTables-usuario').DataTable({
+            language: {
+                lengthMenu: 'Mostrar _MENU_ registros por página',
+                zeroRecords: 'Nada foi encontrado - desculpe :(',
+                info: 'Mostrando página _PAGE_ de _PAGES_',
+                infoEmpty: 'Não há registros disponíveis',
+                infoFiltered: '(Filtrando a partir _MAX_ registros)',
+                search: 'Pesquisar',
+                paginate: {
+                    first: 'Primeira',
+                    last: 'Última',
+                    next: 'Próxima',
+                    previous: "Anterior"
+                }
+            }
+        });
+    });
+
+    function remove(id) {
+        if (confirm("Deseja realmente excluir este usuário?")) {
+            $.ajax({
+                url: '/Usuarios/ExcluirUsuario/' + id,
+                type: 'POST',
+                data: {},
+                error: function () {
+                    alert("Não foi possível excluir o Usuário.");
+                },
+                success: function (data) {
+                    if (!data.success)
+                        return alert("Não foi possível excluir o Usuário.");
+                    window.location.reload();
+                },
+                contenType: false, processData: false,
+
+            })
+        }
+    }
+</script>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Consultar Usuários 
+            <a href="/Usuarios/Usuarios/0" class="btn btn-primary">Novo</a>
+        </h1>
+
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+@{if (ViewBag.ListaUsuarios != null)
+  {
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Advanced Tables -->
+            <div class="panel panel-default">
+
+                <div class="panel-heading">
+                    Cadastrar Usuários                    
+                </div>
+                <div class="panel-body">
+                   
+                        <table id="dataTables-usuario" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Email</th>
+                                    @*<th>Senha</th>*@                                   
+                                    <th>Ação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var item in ViewBag.ListaUsuarios)
+                                {
+                                    <tr class="odd gradeX">
+                                        <td>@item.NomeUsuario</td>
+                                        <td>@item.EmailUsuario</td>
+                                        @*<td>@item.SenhaUsuario</td>*@                                        
+                                        <td>                                        
+                                            <a href="/Usuarios/Usuarios/@item.CodigoUsuario" class="fa fa-edit" style="font-size: 20px"></a>
+                                             @*<a href="#" class="fa fa-remove" onclick="remove(@item.CodigoUsuario)" style="font-size: 20px"></a>*@
+                                        </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+            <!--End Advanced Tables -->
+        </div>
+    </div>
+  }     
+}

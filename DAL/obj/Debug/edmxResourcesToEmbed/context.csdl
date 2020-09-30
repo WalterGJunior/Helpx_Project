@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Banco" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DBHelpXEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_cidade" EntityType="Banco.tb_cidade" />
+    <EntitySet Name="tb_clientes" EntityType="Banco.tb_clientes" />
+    <EntitySet Name="tb_conhecimento" EntityType="Banco.tb_conhecimento" />
+    <EntitySet Name="tb_estado" EntityType="Banco.tb_estado" />
+    <EntitySet Name="tb_incidentes" EntityType="Banco.tb_incidentes" />
+    <EntitySet Name="tb_login" EntityType="Banco.tb_login" />
+    <EntitySet Name="tb_servicos" EntityType="Banco.tb_servicos" />
+    <EntitySet Name="tb_status" EntityType="Banco.tb_status" />
+    <EntitySet Name="tb_upload" EntityType="Banco.tb_upload" />
+    <EntitySet Name="tb_usuarios" EntityType="Banco.tb_usuarios" />
+    <AssociationSet Name="FK_cidade_estado" Association="Banco.FK_cidade_estado">
+      <End Role="tb_estado" EntitySet="tb_estado" />
+      <End Role="tb_cidade" EntitySet="tb_cidade" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cliente_cidade" Association="Banco.FK_cliente_cidade">
+      <End Role="tb_cidade" EntitySet="tb_cidade" />
+      <End Role="tb_clientes" EntitySet="tb_clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cliente_estado" Association="Banco.FK_cliente_estado">
+      <End Role="tb_estado" EntitySet="tb_estado" />
+      <End Role="tb_clientes" EntitySet="tb_clientes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_incidentes_clientes" Association="Banco.fk_incidentes_clientes">
+      <End Role="tb_clientes" EntitySet="tb_clientes" />
+      <End Role="tb_incidentes" EntitySet="tb_incidentes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_servicos_clientes" Association="Banco.fk_servicos_clientes">
+      <End Role="tb_clientes" EntitySet="tb_clientes" />
+      <End Role="tb_servicos" EntitySet="tb_servicos" />
+    </AssociationSet>
+    <AssociationSet Name="fk_upload_conhecimento" Association="Banco.fk_upload_conhecimento">
+      <End Role="tb_conhecimento" EntitySet="tb_conhecimento" />
+      <End Role="tb_upload" EntitySet="tb_upload" />
+    </AssociationSet>
+    <AssociationSet Name="fk_incidentes_status" Association="Banco.fk_incidentes_status">
+      <End Role="tb_status" EntitySet="tb_status" />
+      <End Role="tb_incidentes" EntitySet="tb_incidentes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_incidentes_usuario" Association="Banco.fk_incidentes_usuario">
+      <End Role="tb_usuarios" EntitySet="tb_usuarios" />
+      <End Role="tb_incidentes" EntitySet="tb_incidentes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_login_usuario" Association="Banco.FK_login_usuario">
+      <End Role="tb_usuarios" EntitySet="tb_usuarios" />
+      <End Role="tb_login" EntitySet="tb_login" />
+    </AssociationSet>
+    <AssociationSet Name="fk_servicos_status" Association="Banco.fk_servicos_status">
+      <End Role="tb_status" EntitySet="tb_status" />
+      <End Role="tb_servicos" EntitySet="tb_servicos" />
+    </AssociationSet>
+    <AssociationSet Name="fk_servicos_usuario" Association="Banco.fk_servicos_usuario">
+      <End Role="tb_usuarios" EntitySet="tb_usuarios" />
+      <End Role="tb_servicos" EntitySet="tb_servicos" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tb_cidade">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="estado_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_estado" Relationship="Banco.FK_cidade_estado" FromRole="tb_cidade" ToRole="tb_estado" />
+    <NavigationProperty Name="tb_clientes" Relationship="Banco.FK_cliente_cidade" FromRole="tb_cidade" ToRole="tb_clientes" />
+  </EntityType>
+  <EntityType Name="tb_clientes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="cpf_cnpj" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rg" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="nome" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="nome_fantasia" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="razao_social" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="telefone" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="celular" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rua" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="numero" Type="Int32" />
+    <Property Name="complemente" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="bairro" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="cep" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="cidade_id" Type="Int32" Nullable="false" />
+    <Property Name="estado_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_cidade" Relationship="Banco.FK_cliente_cidade" FromRole="tb_clientes" ToRole="tb_cidade" />
+    <NavigationProperty Name="tb_estado" Relationship="Banco.FK_cliente_estado" FromRole="tb_clientes" ToRole="tb_estado" />
+    <NavigationProperty Name="tb_incidentes" Relationship="Banco.fk_incidentes_clientes" FromRole="tb_clientes" ToRole="tb_incidentes" />
+    <NavigationProperty Name="tb_servicos" Relationship="Banco.fk_servicos_clientes" FromRole="tb_clientes" ToRole="tb_servicos" />
+  </EntityType>
+  <EntityType Name="tb_conhecimento">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descricao" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tb_upload" Relationship="Banco.fk_upload_conhecimento" FromRole="tb_conhecimento" ToRole="tb_upload" />
+  </EntityType>
+  <EntityType Name="tb_estado">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tb_cidade" Relationship="Banco.FK_cidade_estado" FromRole="tb_estado" ToRole="tb_cidade" />
+    <NavigationProperty Name="tb_clientes" Relationship="Banco.FK_cliente_estado" FromRole="tb_estado" ToRole="tb_clientes" />
+  </EntityType>
+  <EntityType Name="tb_incidentes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descricao" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="detalhamento" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="status_id" Type="Int32" Nullable="false" />
+    <Property Name="usuario_id" Type="Int32" Nullable="false" />
+    <Property Name="clientes_id" Type="Int32" Nullable="false" />
+    <Property Name="estado_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_clientes" Relationship="Banco.fk_incidentes_clientes" FromRole="tb_incidentes" ToRole="tb_clientes" />
+    <NavigationProperty Name="tb_status" Relationship="Banco.fk_incidentes_status" FromRole="tb_incidentes" ToRole="tb_status" />
+    <NavigationProperty Name="tb_usuarios" Relationship="Banco.fk_incidentes_usuario" FromRole="tb_incidentes" ToRole="tb_usuarios" />
+  </EntityType>
+  <EntityType Name="tb_login">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="usuario" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="senha" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="usuario_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_usuarios" Relationship="Banco.FK_login_usuario" FromRole="tb_login" ToRole="tb_usuarios" />
+  </EntityType>
+  <EntityType Name="tb_servicos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descricao" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="detalhamento" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="status_id" Type="Int32" Nullable="false" />
+    <Property Name="usuario_id" Type="Int32" Nullable="false" />
+    <Property Name="clientes_id" Type="Int32" Nullable="false" />
+    <Property Name="estado_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_clientes" Relationship="Banco.fk_servicos_clientes" FromRole="tb_servicos" ToRole="tb_clientes" />
+    <NavigationProperty Name="tb_status" Relationship="Banco.fk_servicos_status" FromRole="tb_servicos" ToRole="tb_status" />
+    <NavigationProperty Name="tb_usuarios" Relationship="Banco.fk_servicos_usuario" FromRole="tb_servicos" ToRole="tb_usuarios" />
+  </EntityType>
+  <EntityType Name="tb_status">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="descricao" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tb_incidentes" Relationship="Banco.fk_incidentes_status" FromRole="tb_status" ToRole="tb_incidentes" />
+    <NavigationProperty Name="tb_servicos" Relationship="Banco.fk_servicos_status" FromRole="tb_status" ToRole="tb_servicos" />
+  </EntityType>
+  <EntityType Name="tb_upload">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="dt_criacao" Type="DateTime" Precision="3" />
+    <Property Name="conhec_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_conhecimento" Relationship="Banco.fk_upload_conhecimento" FromRole="tb_upload" ToRole="tb_conhecimento" />
+  </EntityType>
+  <EntityType Name="tb_usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="cargo" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tb_incidentes" Relationship="Banco.fk_incidentes_usuario" FromRole="tb_usuarios" ToRole="tb_incidentes" />
+    <NavigationProperty Name="tb_login" Relationship="Banco.FK_login_usuario" FromRole="tb_usuarios" ToRole="tb_login" />
+    <NavigationProperty Name="tb_servicos" Relationship="Banco.fk_servicos_usuario" FromRole="tb_usuarios" ToRole="tb_servicos" />
+  </EntityType>
+  <Association Name="FK_cidade_estado">
+    <End Role="tb_estado" Type="Banco.tb_estado" Multiplicity="1" />
+    <End Role="tb_cidade" Type="Banco.tb_cidade" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_estado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_cidade">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cliente_cidade">
+    <End Role="tb_cidade" Type="Banco.tb_cidade" Multiplicity="1" />
+    <End Role="tb_clientes" Type="Banco.tb_clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_cidade">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_clientes">
+        <PropertyRef Name="cidade_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cliente_estado">
+    <End Role="tb_estado" Type="Banco.tb_estado" Multiplicity="1" />
+    <End Role="tb_clientes" Type="Banco.tb_clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_estado">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_clientes">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_incidentes_clientes">
+    <End Role="tb_clientes" Type="Banco.tb_clientes" Multiplicity="1" />
+    <End Role="tb_incidentes" Type="Banco.tb_incidentes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_clientes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_incidentes">
+        <PropertyRef Name="clientes_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_servicos_clientes">
+    <End Role="tb_clientes" Type="Banco.tb_clientes" Multiplicity="1" />
+    <End Role="tb_servicos" Type="Banco.tb_servicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_clientes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_servicos">
+        <PropertyRef Name="clientes_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_upload_conhecimento">
+    <End Role="tb_conhecimento" Type="Banco.tb_conhecimento" Multiplicity="1" />
+    <End Role="tb_upload" Type="Banco.tb_upload" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_conhecimento">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_upload">
+        <PropertyRef Name="conhec_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_incidentes_status">
+    <End Role="tb_status" Type="Banco.tb_status" Multiplicity="1" />
+    <End Role="tb_incidentes" Type="Banco.tb_incidentes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_status">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_incidentes">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_incidentes_usuario">
+    <End Role="tb_usuarios" Type="Banco.tb_usuarios" Multiplicity="1" />
+    <End Role="tb_incidentes" Type="Banco.tb_incidentes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_incidentes">
+        <PropertyRef Name="usuario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_login_usuario">
+    <End Role="tb_usuarios" Type="Banco.tb_usuarios" Multiplicity="1" />
+    <End Role="tb_login" Type="Banco.tb_login" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_login">
+        <PropertyRef Name="usuario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_servicos_status">
+    <End Role="tb_status" Type="Banco.tb_status" Multiplicity="1" />
+    <End Role="tb_servicos" Type="Banco.tb_servicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_status">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_servicos">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_servicos_usuario">
+    <End Role="tb_usuarios" Type="Banco.tb_usuarios" Multiplicity="1" />
+    <End Role="tb_servicos" Type="Banco.tb_servicos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_servicos">
+        <PropertyRef Name="usuario_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

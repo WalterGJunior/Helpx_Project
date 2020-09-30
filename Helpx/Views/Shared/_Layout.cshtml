@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HelpX</title>
+
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="~/assets/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="~/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">   
+    <link href="~/assets/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="~/assets/datatables/dataTables.bootstrap.css" rel="stylesheet" />
+   
+    <script src="~/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/assets/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="~/assets/dist/js/sb-admin-2.js"></script>
+    <script src="~/assets/vendor/datatables/js/jquery.dataTables.min.js"></script>   
+    <script type="~/assets/vendor/datatables/js/calendario.js" src="calendario.js"></script>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.ui/1.8.5/jquery-ui.js"></script>    
+    <script src="~/assets/datatables/jquery.dataTables.min.js"></script>
+    
+    <script src="~/assets/datatables/dataTables.bootstrap.min.js"></script>
+
+    <script src="~/assets/datepicker/bootstrap-datepicker.js"></script>
+    <link href="~/assets/datepicker/datepicker3.css" rel="stylesheet" />
+    <script src="~/assets/datepicker/locales/bootstrap-datepicker.pt-BR.js"></script>
+    
+    <script src="~/assets/vendor/flot/jquery.flot.canvas.js"></script>
+    
+    <!-- Flot Charts JavaScript -->
+    <script src="~/assets/vendor/flot/excanvas.min.js"></script>
+    <script src="~/assets/vendor/flot/jquery.flot.js"></script>
+    <script src="~/assets/vendor/flot/jquery.flot.pie.js"></script>
+    <script src="~/assets/vendor/flot/jquery.flot.resize.js"></script>
+    <script src="~/assets/vendor/flot/jquery.flot.time.js"></script>
+    <script src="~/assets/vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+    <script src="~/assets/data/flot-data.js"></script>
+
+    <!-- Morris Charts CSS -->
+    <link href="~/assets/vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Morris Charts JavaScript -->
+    <script src="~/assets/vendor/raphael/raphael.min.js"></script>
+    <script src="~/assets/vendor/morrisjs/morris.min.js"></script>
+    <script src="~/assets/data/morris-data.js"></script>
+    
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">          
+            @Html.Partial("_topo")
+            @Html.Partial("_menu")
+        </nav>
+
+        <div id="page-wrapper">
+            
+            @RenderBody()
+        </div>
+     </div>
+        
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Incidentes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@{
+    
+    if (ViewBag.Validar != null)
+    {
+        int valor = Convert.ToInt32(ViewBag.Validar);
+
+        if (valor == 1)
+        {
+            <div class="alert alert-success">
+                 Dados Gravados com suceso
+            </div>        
+        }
+        else if (valor == 0)
+        {     
+            <div class="alert alert-warning">
+                Preencher o(s) campo(s) obrigatório(s).
+            </div>
+        }
+        else if (valor == -1)
+        {
+            <div class="alert alert-danger">
+                Ocorreu um erro na operação
+            </div>
+        }
+    }
+}
+
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Novo Serviço</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Solicitação de Serviços
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Empresa</label>
+                                         <div class="form-group input-group">
+                                             <input type="text" class="form-control">
+                                                 <span class="input-group-btn">
+                                                     <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                                                     </button>
+                                                 </span>
+                                         </div>
+                                            <p class="help-block"> </p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Solicitante</label>
+                                            <input class="form-control" placeholder="Nome do Solicitante">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Telefone</label>
+                                            <input class="form-control" placeholder="Telefone para contato">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>E-mail</label>
+                                            <input class="form-control" placeholder="example@example.com.br">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Descrição</label>
+                                            <input class="form-control" placeholder="Nome do Chamado">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Detalhamento</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="disabledSelect">Atendente</label>
+                                            <input class="form-control" id="disabledInput" type="text" placeholder="Nome do Atendente" disabled>
+                                        </div>
+                                        <p>
+                                            <button type="button" class="btn btn-primary">Salvar</button>                               
+                                        </p>                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BancoStoreContainer" CdmEntityContainer="DBHelpXEntities">
+    <EntitySetMapping Name="tb_cidade">
+      <EntityTypeMapping TypeName="Banco.tb_cidade">
+        <MappingFragment StoreEntitySet="tb_cidade">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="estado_id" ColumnName="estado_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_clientes">
+      <EntityTypeMapping TypeName="Banco.tb_clientes">
+        <MappingFragment StoreEntitySet="tb_clientes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cpf_cnpj" ColumnName="cpf_cnpj" />
+          <ScalarProperty Name="rg" ColumnName="rg" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="nome_fantasia" ColumnName="nome_fantasia" />
+          <ScalarProperty Name="razao_social" ColumnName="razao_social" />
+          <ScalarProperty Name="telefone" ColumnName="telefone" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="rua" ColumnName="rua" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="complemente" ColumnName="complemente" />
+          <ScalarProperty Name="bairro" ColumnName="bairro" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+          <ScalarProperty Name="cidade_id" ColumnName="cidade_id" />
+          <ScalarProperty Name="estado_id" ColumnName="estado_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_conhecimento">
+      <EntityTypeMapping TypeName="Banco.tb_conhecimento">
+        <MappingFragment StoreEntitySet="tb_conhecimento">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_estado">
+      <EntityTypeMapping TypeName="Banco.tb_estado">
+        <MappingFragment StoreEntitySet="tb_estado">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_incidentes">
+      <EntityTypeMapping TypeName="Banco.tb_incidentes">
+        <MappingFragment StoreEntitySet="tb_incidentes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="detalhamento" ColumnName="detalhamento" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
+          <ScalarProperty Name="clientes_id" ColumnName="clientes_id" />
+          <ScalarProperty Name="estado_id" ColumnName="estado_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_login">
+      <EntityTypeMapping TypeName="Banco.tb_login">
+        <MappingFragment StoreEntitySet="tb_login">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="senha" ColumnName="senha" />
+          <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_servicos">
+      <EntityTypeMapping TypeName="Banco.tb_servicos">
+        <MappingFragment StoreEntitySet="tb_servicos">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="detalhamento" ColumnName="detalhamento" />
+          <ScalarProperty Name="status_id" ColumnName="status_id" />
+          <ScalarProperty Name="usuario_id" ColumnName="usuario_id" />
+          <ScalarProperty Name="clientes_id" ColumnName="clientes_id" />
+          <ScalarProperty Name="estado_id" ColumnName="estado_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_status">
+      <EntityTypeMapping TypeName="Banco.tb_status">
+        <MappingFragment StoreEntitySet="tb_status">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_upload">
+      <EntityTypeMapping TypeName="Banco.tb_upload">
+        <MappingFragment StoreEntitySet="tb_upload">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="dt_criacao" ColumnName="dt_criacao" />
+          <ScalarProperty Name="conhec_id" ColumnName="conhec_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_usuarios">
+      <EntityTypeMapping TypeName="Banco.tb_usuarios">
+        <MappingFragment StoreEntitySet="tb_usuarios">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

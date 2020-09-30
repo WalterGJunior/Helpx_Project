@@ -1,0 +1,87 @@
+﻿@using DAL;
+@using System.Data.Entity;
+@model DAL.UsuariosVO
+
+@{
+    ViewBag.Title = "Usuarios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<Script>
+
+    function salvarCliente() {
+
+        if ($('#nome').val().trim() == "") {
+            return alert("PREENCHER O NOME DO USUÁRIO");
+
+        } else if ($('#senha').val().trim() == '') {
+            return alert('PREENCHER A SENHA');
+
+        } else if ($('#email').val().trim() == '') {
+            return alert('PREENCHER O EMAIL DO USUÁRIO');
+        }
+        
+    
+
+        var formData = $("#form-usuario");
+        $.ajax({
+            url: '/Usuarios/GravarUsuarios',
+            type: 'POST',
+            data: formData.serialize(),
+            error: function () {
+                alert("Error");
+            },
+            success: function (data) {
+                if (!data.success)
+                    return alert("Erro ao gravar Usuario.");
+                window.location = "/Usuarios/Index";
+            },
+            contenType: false, processData: false,
+
+        })
+    };
+</Script>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">@(Model.CodigoUsuario > 0 ? "Editar" : "Novo") Usuário</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Cadastro de Usuários
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form id="form-cliente" role="form" action="javascript:salvarUsuario()" method="post">
+                            <div class="form-group">
+                                <input type="hidden" name="id" value="@Model.CodigoUsuario">
+                            </div>
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input class="form-control" name="nome" id="nome"  placeholder="Nome do colaborador" value="@Model.NomeUsuario">
+                            </div>
+                            <div class="form-group">
+                                <label>email</label>
+                                <input class="form-control" name="email" id="email" type='email' placeholder="E-mail" value="@Model.EmailUsuario">
+                            </div>
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <input class="form-control" name="senha" id="senha" type='password' placeholder="Digite uma senha" value="@Model.SenhaUsuario">
+                            </div>
+                            <p>
+                                <button name="btn_salvar" id="btn_salvar" class="btn btn-primary">Salvar</button>
+                                <a class="btn btn-default" href="/Usuarios/Index" role="button">Cancelar</a>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

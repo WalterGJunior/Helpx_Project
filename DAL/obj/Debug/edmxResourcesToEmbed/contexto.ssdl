@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Banco.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BancoStoreContainer">
+    <EntitySet Name="tb_cidades" EntityType="Banco.Store.tb_cidades" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_clientes" EntityType="Banco.Store.tb_clientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_estados" EntityType="Banco.Store.tb_estados" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_LogSolicitacoes" EntityType="Banco.Store.tb_LogSolicitacoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_solicitacoes" EntityType="Banco.Store.tb_solicitacoes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_status" EntityType="Banco.Store.tb_status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_tipos" EntityType="Banco.Store.tb_tipos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_usuarios" EntityType="Banco.Store.tb_usuarios" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_cidades_estados" Association="Banco.Store.FK_cidades_estados">
+      <End Role="tb_estados" EntitySet="tb_estados" />
+      <End Role="tb_cidades" EntitySet="tb_cidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_cliente_cidade" Association="Banco.Store.FK_cliente_cidade">
+      <End Role="tb_cidades" EntitySet="tb_cidades" />
+      <End Role="tb_clientes" EntitySet="tb_clientes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_LogSolicitacoes_solicitacoes" Association="Banco.Store.fk_LogSolicitacoes_solicitacoes">
+      <End Role="tb_solicitacoes" EntitySet="tb_solicitacoes" />
+      <End Role="tb_LogSolicitacoes" EntitySet="tb_LogSolicitacoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogSolicitacoes_status" Association="Banco.Store.FK_LogSolicitacoes_status">
+      <End Role="tb_status" EntitySet="tb_status" />
+      <End Role="tb_LogSolicitacoes" EntitySet="tb_LogSolicitacoes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_LogSolicitacoes_usuarios" Association="Banco.Store.fk_LogSolicitacoes_usuarios">
+      <End Role="tb_usuarios" EntitySet="tb_usuarios" />
+      <End Role="tb_LogSolicitacoes" EntitySet="tb_LogSolicitacoes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_solicitacoes_clientes" Association="Banco.Store.fk_solicitacoes_clientes">
+      <End Role="tb_clientes" EntitySet="tb_clientes" />
+      <End Role="tb_solicitacoes" EntitySet="tb_solicitacoes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_solicitacoes_status" Association="Banco.Store.fk_solicitacoes_status">
+      <End Role="tb_status" EntitySet="tb_status" />
+      <End Role="tb_solicitacoes" EntitySet="tb_solicitacoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_solicitacoes_tipos" Association="Banco.Store.FK_solicitacoes_tipos">
+      <End Role="tb_tipos" EntitySet="tb_tipos" />
+      <End Role="tb_solicitacoes" EntitySet="tb_solicitacoes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_solicitacoes_usuario_cadastro" Association="Banco.Store.fk_solicitacoes_usuario_cadastro">
+      <End Role="tb_usuarios" EntitySet="tb_usuarios" />
+      <End Role="tb_solicitacoes" EntitySet="tb_solicitacoes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tb_cidades">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="estado_id" Type="int" />
+    <Property Name="uf" Type="varchar" MaxLength="4" />
+    <Property Name="nome" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tb_clientes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="cpf_cnpj" Type="varchar" MaxLength="20" />
+    <Property Name="rg" Type="varchar" MaxLength="20" />
+    <Property Name="nome" Type="varchar" MaxLength="100" />
+    <Property Name="nome_fantasia" Type="varchar" MaxLength="100" />
+    <Property Name="razao_social" Type="varchar" MaxLength="100" />
+    <Property Name="telefone" Type="varchar" MaxLength="20" />
+    <Property Name="celular" Type="varchar" MaxLength="20" />
+    <Property Name="rua" Type="varchar" MaxLength="100" />
+    <Property Name="numero" Type="int" />
+    <Property Name="complemente" Type="varchar" MaxLength="50" />
+    <Property Name="bairro" Type="varchar" MaxLength="50" />
+    <Property Name="cep" Type="varchar" MaxLength="20" />
+    <Property Name="status" Type="bit" Nullable="false" />
+    <Property Name="cidade_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_estados">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="uf" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="nome" Type="varchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tb_LogSolicitacoes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="data_registro" Type="datetime" />
+    <Property Name="solicitacoes_id" Type="int" Nullable="false" />
+    <Property Name="detalhamento" Type="varchar(max)" />
+    <Property Name="usuario_cadastro_id" Type="int" />
+    <Property Name="status_id" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_solicitacoes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="codigo" Type="varchar" MaxLength="30" />
+    <Property Name="tipo_id" Type="int" Nullable="false" />
+    <Property Name="solicitante" Type="varchar" MaxLength="100" />
+    <Property Name="telefone" Type="varchar" MaxLength="60" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="descricao" Type="varchar" MaxLength="200" />
+    <Property Name="detalhamento" Type="varchar(max)" />
+    <Property Name="data_cadastro" Type="datetime" />
+    <Property Name="data_final" Type="datetime" />
+    <Property Name="status_id" Type="int" Nullable="false" />
+    <Property Name="usuario_cadastro_id" Type="int" Nullable="false" />
+    <Property Name="clientes_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_status">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="descricao" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tb_tipos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="tb_usuarios">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="varchar" MaxLength="20" />
+    <Property Name="senha" Type="varchar" MaxLength="20" />
+    <Property Name="email" Type="varchar" MaxLength="60" />
+    <Property Name="status" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_cidades_estados">
+    <End Role="tb_estados" Type="Banco.Store.tb_estados" Multiplicity="0..1" />
+    <End Role="tb_cidades" Type="Banco.Store.tb_cidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_estados">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_cidades">
+        <PropertyRef Name="estado_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_cliente_cidade">
+    <End Role="tb_cidades" Type="Banco.Store.tb_cidades" Multiplicity="1" />
+    <End Role="tb_clientes" Type="Banco.Store.tb_clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_cidades">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_clientes">
+        <PropertyRef Name="cidade_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_LogSolicitacoes_solicitacoes">
+    <End Role="tb_solicitacoes" Type="Banco.Store.tb_solicitacoes" Multiplicity="1" />
+    <End Role="tb_LogSolicitacoes" Type="Banco.Store.tb_LogSolicitacoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_solicitacoes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_LogSolicitacoes">
+        <PropertyRef Name="solicitacoes_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogSolicitacoes_status">
+    <End Role="tb_status" Type="Banco.Store.tb_status" Multiplicity="0..1" />
+    <End Role="tb_LogSolicitacoes" Type="Banco.Store.tb_LogSolicitacoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_status">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_LogSolicitacoes">
+        <PropertyRef Name="status_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_LogSolicitacoes_usuarios">
+    <End Role="tb_usuarios" Type="Banco.Store.tb_usuarios" Multiplicity="0..1" />
+    <End Role="tb_LogSolicitacoes" Type="Banco.Store.tb_LogSolicitacoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_LogSolicitacoes">
+        <PropertyRef Name="usuario_cadastro_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_solicitacoes_clientes">
+    <End Role="tb_clientes" Type="Banco.Store.tb_clientes" Multiplicity="1" />
+    <End Role="tb_solicitacoes" Type="Banco.Store.tb_solicitacoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_clientes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_solicitacoes">
+        <PropertyRef Name="clientes_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_solicitacoes_status">
+    <End Role="tb_status" Type="Banco.Store.tb_status" Multiplicity="1" />
+    <End Role="tb_solicitacoes" Type="Banco.Store.tb_solicitacoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_status">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_solicitacoes">
+        <PropertyRef Name="status_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_solicitacoes_tipos">
+    <End Role="tb_tipos" Type="Banco.Store.tb_tipos" Multiplicity="1" />
+    <End Role="tb_solicitacoes" Type="Banco.Store.tb_solicitacoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_tipos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_solicitacoes">
+        <PropertyRef Name="tipo_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_solicitacoes_usuario_cadastro">
+    <End Role="tb_usuarios" Type="Banco.Store.tb_usuarios" Multiplicity="1" />
+    <End Role="tb_solicitacoes" Type="Banco.Store.tb_solicitacoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_usuarios">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tb_solicitacoes">
+        <PropertyRef Name="usuario_cadastro_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,10 @@
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\VO\bin\Debug\VO.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\VO\bin\Debug\VO.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\VO\obj\Debug\VO.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\VO\obj\Debug\VO.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\VO\obj\Debug\VO.csprojResolveAssemblyReference.cache
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\VO\bin\Debug\VO.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\VO\bin\Debug\VO.pdb
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\VO\obj\Debug\VO.csprojResolveAssemblyReference.cache
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\VO\obj\Debug\VO.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\VO\obj\Debug\VO.pdb

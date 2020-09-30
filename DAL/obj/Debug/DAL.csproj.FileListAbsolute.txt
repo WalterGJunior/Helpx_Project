@@ -1,0 +1,54 @@
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\DAL\bin\Debug\DAL.dll.config
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\DAL\bin\Debug\DAL.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\DAL\bin\Debug\DAL.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\DAL\bin\Debug\EntityFramework.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\DAL\bin\Debug\EntityFramework.xml
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\DAL\obj\Debug\DAL.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\DAL\obj\Debug\DAL.pdb
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\bin\Debug\DAL.dll.config
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\bin\Debug\DAL.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\bin\Debug\DAL.pdb
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\bin\Debug\EntityFramework.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\bin\Debug\EntityFramework.xml
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\obj\Debug\DAL.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\obj\Debug\DAL.pdb
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\bin\Debug\DAL.dll.config
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\bin\Debug\DAL.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\bin\Debug\DAL.pdb
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\bin\Debug\EntityFramework.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\bin\Debug\EntityFramework.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\obj\Debug\DAL.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\DAL\obj\Debug\DAL.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\DAL\bin\Debug\DAL.dll.config
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\DAL\bin\Debug\DAL.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\DAL\bin\Debug\DAL.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\DAL\bin\Debug\EntityFramework.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\DAL\bin\Debug\VO.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\DAL\bin\Debug\VO.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\DAL\bin\Debug\EntityFramework.xml
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\DAL\obj\Debug\DAL.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\DAL\obj\Debug\DAL.pdb
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\DAL.dll.config
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\DAL.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\DAL.pdb
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\EntityFramework.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\VO.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\VO.pdb
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\EntityFramework.xml
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\obj\Debug\DAL.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\obj\Debug\DAL.pdb
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\DAL.dll.config
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\DAL.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\DAL.pdb
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\EntityFramework.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\VO.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\VO.pdb
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\bin\Debug\EntityFramework.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\obj\Debug\DAL.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,157 @@
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\Helpx.dll
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\Helpx.pdb
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\Microsoft.Web.Infrastructure.dll
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.Helpers.dll
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.Mvc.dll
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.Razor.dll
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.WebPages.Deployment.dll
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.WebPages.dll
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.WebPages.Razor.dll
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.Helpers.xml
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.Mvc.xml
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.Razor.xml
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.WebPages.xml
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.WebPages.Deployment.xml
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\bin\System.Web.WebPages.Razor.xml
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\obj\Debug\Helpx.csprojResolveAssemblyReference.cache
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\obj\Debug\Helpx.dll
+c:\users\tecinfo\documents\visual studio 2012\Projects\Helpx\Helpx\obj\Debug\Helpx.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\Helpx\bin\DAL.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\Helpx\bin\Microsoft.SqlServer.DTSRuntimeWrap.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx\Helpx\bin\DAL.pdb
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Helpx.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Helpx.pdb
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\DAL.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Microsoft.Web.Infrastructure.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Newtonsoft.Json.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Helpers.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Mvc.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Razor.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Deployment.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Razor.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\DAL.pdb
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Newtonsoft.Json.xml
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Helpers.xml
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Mvc.xml
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Razor.xml
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.xml
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Deployment.xml
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Razor.xml
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.csprojResolveAssemblyReference.cache
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.dll
+F:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.pdb
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Helpx.dll.config
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Helpx.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Helpx.pdb
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\DAL.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Microsoft.Web.Infrastructure.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Newtonsoft.Json.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Net.Http.Formatting.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Helpers.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Http.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Http.WebHost.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Mvc.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Razor.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Deployment.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Razor.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\DAL.pdb
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\Newtonsoft.Json.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Net.Http.Formatting.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Helpers.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Http.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Http.WebHost.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Mvc.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.Razor.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Deployment.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Razor.xml
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.csprojResolveAssemblyReference.cache
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.dll
+D:\CURSO SENAI - PRONATEC\MeuProjeto\V1\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.csprojResolveAssemblyReference.cache
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\Helpx.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\Helpx.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\DAL.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.Helpers.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.Mvc.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.Razor.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Razor.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\VO.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\Microsoft.SqlServer.DTSRuntimeWrap.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\DAL.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\VO.pdb
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.Helpers.xml
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.Mvc.xml
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.Razor.xml
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.xml
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Razor.xml
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.dll
+C:\Users\tecinfo\Documents\Visual Studio 2012\Projects\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.pdb
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Helpx.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Helpx.pdb
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\DAL.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Microsoft.Web.Infrastructure.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Helpers.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Mvc.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Razor.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Deployment.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Razor.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\VO.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\DAL.pdb
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\VO.pdb
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Helpers.xml
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Mvc.xml
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Razor.xml
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.xml
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Deployment.xml
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Razor.xml
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.csprojResolveAssemblyReference.cache
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.pdb
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Helpx.dll.config
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Helpx.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Helpx.pdb
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\DAL.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Microsoft.Web.Infrastructure.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Newtonsoft.Json.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Net.Http.Formatting.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Helpers.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Http.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Http.WebHost.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Mvc.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Razor.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Deployment.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Razor.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\VO.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\DAL.pdb
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\VO.pdb
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Newtonsoft.Json.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Net.Http.Formatting.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Helpers.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Http.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Http.WebHost.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Mvc.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Razor.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Deployment.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.WebPages.Razor.xml
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.csprojResolveAssemblyReference.cache
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.dll
+F:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\obj\Debug\Helpx.pdb
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Helpx.dll.config
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Newtonsoft.Json.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Net.Http.Formatting.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Http.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Http.WebHost.dll
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\Newtonsoft.Json.xml
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Net.Http.Formatting.xml
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Http.xml
+D:\CURSO SENAI - PRONATEC\Helpx_New\Helpx\Helpx\bin\System.Web.Http.WebHost.xml
